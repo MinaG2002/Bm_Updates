@@ -1,0 +1,65 @@
+{
+    "AddaSwapRequest": "   إضافة طلب سواب        ",
+    "yourName": "اسمك",
+    "Enteryourname": "أدخل اسمك",
+    "Pleaseenteryourname": "يرجى إدخال اسمك",
+    "Entercisconumber": "أدخل رقم سيسكو",
+    "Enteryourcisconumber": "أدخل رقم سيسكو الخاص بك",
+    "Please": "يرجى",
+    "EnterLocation": "أدخل الموقع",
+    "Pleaseselectalocation": "يرجى اختيار موقع",
+    "Enteryourphonenumber": "أدخل رقم هاتفك",
+    "Pleaseenteryourphone": "يرجى إدخال رقم الهاتف",
+    "rquestType": "نوع الطلب",
+    "Selectrequesttype": "اختر نوع الطلب",
+    "Pleaseselectarequesttype": "يرجى اختيار نوع الطلب",
+    "SelectDate": "اختر التاريخ",
+    "Pleaseselectadate": "يرجى اختيار تاريخ",
+    "Notes": "ملاحظات",
+    "Enteranyadditionalnotes": "أدخل أي ملاحظات إضافية",
+    "addrequestsuccessfully": "تم إضافة الطلب بنجاح",
+    "SubmitRequest": "إرسال الطلب",
+
+    "Allrequests": "جميع الطلبات                 ",
+    "FilterbyLocation": "تصفية حسب الموقع",
+    "All": "الكل",
+    "requests": "طلبات",
+    "Therearenorequestsyet": "لا توجد طلبات حتى الآن",
+    "Name": "الاسم",
+    "CiscoNumber": "رقم سيسكو",
+    "Phone": "رقم الهاتف",
+    "Date": "التاريخ",
+    "WhatsApp": "واتساب",
+
+    "Notloggedin": "⚠️ لم يتم تسجيل الدخول",
+    "MyRequests": "طلباتي                     ",
+    "Norequestsyet": "لا توجد طلبات حتى الآن",
+    "Confirmdeletion": "تأكيد الحذف",
+    "Areyousureyouwanttodeletethisrequest": "هل أنت متأكد أنك تريد حذف هذا الطلب؟",
+    "Cancel": "إلغاء",
+    "Therequestwassuccessfullydeleted": "تم حذف الطلب بنجاح",
+    "Delete": "حذف",
+
+    "Editrequestsuccessfully": "تم تعديل الطلب بنجاح",
+    "EditRequest": "تعديل الطلب",
+    "Save": "حفظ",
+    "Selectdate": "اختر التاريخ", 
+
+    "AllRequests": "جميع الطلبات",
+    "EditSwap": "تعديل سواب",
+    "AddSwap": "إضافة سواب",
+
+    "Updates": "التحديثات",
+    "Latestupdates": "أحدث التحديثات",
+
+    "TopRank": "الترتيب الأعلى",
+    "Results": "النتائج",
+    "Notification": "الإشعارات",
+    "PERSONALDETAILS": "البيانات الشخصية",
+    "Welcome": "مرحبًا",
+    "YourCisco": "سيسكو الخاص بك",
+    "LogOut": "تسجيل الخروج"
+
+
+
+}

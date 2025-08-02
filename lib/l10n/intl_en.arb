@@ -1,0 +1,68 @@
+{
+    "AddaSwapRequest":"Add a Swap Request          ",
+    "yourName":"your Name",
+    "Enteryourname":"Enter your name",
+    "Pleaseenteryourname":"Please enter your name",
+    "Entercisconumber":"Enter cisco number",
+    "Enteryourcisconumber":"Enter your cisco number ",
+    "Please":"Please ",
+    "EnterLocation":"Enter Location",
+    "Pleaseselectalocation":"Please select a location",
+    "Enteryourphonenumber":"Enter your phone number",
+    "Pleaseenteryourphone":"Please enter your phone",
+    "rquestType":"rquest Type",
+    "Selectrequesttype":"Select request type",
+    "Pleaseselectarequesttype":"Please select a request type",
+    "SelectDate":"Select Date",
+    "Pleaseselectadate":"Please select a date",
+    "Notes":"Notes",
+    "Enteranyadditionalnotes":"Enter any additional notes",
+    "addrequestsuccessfully":"add request successfully",
+    "SubmitRequest":" Submit Request",
+
+    "Allrequests":"All requests",
+    "FilterbyLocation":"Filter by Location",
+    "All":"All",
+    "requests":"requests",
+    "Therearenorequestsyet":"There are no requests yet",
+    "Name":"Name",
+    "CiscoNumber":"Cisco Number",
+    "Phone":"Phone",
+    "Date":"Date",
+    "WhatsApp":"Whats App",
+
+    "Notloggedin":"⚠️ Not logged in",
+    "MyRequests":"My Requests",
+    "Norequestsyet":"No requests yet",
+    "Confirmdeletion":"Confirm deletion",
+    "Areyousureyouwanttodeletethisrequest":"Are you sure you want to delete this request?",
+    "Cancel":"Cancel",
+    "Therequestwassuccessfullydeleted":"The request was successfully deleted",
+    "Delete":"Delete",
+
+    "Editrequestsuccessfully":"Edit request successfully",
+    "EditRequest":"Edit Request",
+    "Save":"Save",
+    "Selectdate":"Select date",
+
+    
+    "AllRequests":"All Requests",
+    "EditSwap":"Edit Swap",
+    "AddSwap":"Add Swap",
+
+    "Updates":"Updates",
+    "Latestupdates":"Latest updates",
+
+    "TopRank":"Top Rank",
+    "Results":"Results",
+    "Notification":"Notification",
+    "PERSONALDETAILS":"PERSONAL DETAILS       ",
+    "Welcome":"Welcome",
+    "YourCisco":"Your Cisco",
+    "LogOut":"Log Out"
+
+
+   
+  
+
+}
