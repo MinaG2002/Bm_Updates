@@ -236,7 +236,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: WidgetStateProperty.all(const EdgeInsets.all(12)),
                     shape: WidgetStateProperty.all(
                       RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(40),
                       ),
                     ),
                   ),

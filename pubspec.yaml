@@ -50,6 +50,8 @@ dependencies:
   
   flutter_localizations:
         sdk: flutter
+  firebase_crashlytics: ^4.3.10
+  firebase_analytics: ^11.6.0
 
 
 

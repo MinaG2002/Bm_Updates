@@ -1,4 +1,5 @@
 import 'package:bmproject/BM/Login/controller/login_control.dart';
+import 'package:bmproject/BM/nav_bar/view/nav_bar.dart';
 import 'package:bmproject/BM/quiz/model/quiz.dart';
 import 'package:bmproject/theme.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -133,6 +134,13 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final userProvider = Provider.of<UserProvider>(context, listen: false);
+    final name = userProvider.userName ?? 'Unknown';
+    final cisco = userProvider.userCisco ?? '0000';
+    final leader = userProvider.userleader ?? 'Unknown';
+    final superr = userProvider.usersuper ?? 'Unknown';
+    final manger = userProvider.usermanager ?? 'Unknown';
+    final location = userProvider.userlocation ?? 'Unknown';
     final score = widget.correctAnswers / widget.totalQuestions;
     final int scorepercentage = (score * 100).round();
 
@@ -469,18 +477,18 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
                     Expanded(
                       child: ElevatedButton.icon(
                         onPressed: () async {
-                          Navigator.pop(context);
-                          final userProvider = Provider.of<UserProvider>(
-                            context,
-                            listen: false,
-                          );
-                          final name = userProvider.userName ?? 'Unknown';
-                          final cisco = userProvider.userCisco ?? '0000';
-                          final leader = userProvider.userleader ?? 'Unknown';
-                          final superr = userProvider.usersuper ?? 'Unknown';
-                          final manger = userProvider.usermanager ?? 'Unknown';
-                          final location =
-                              userProvider.userlocation ?? 'Unknown';
+                          // final userProvider = Provider.of<UserProvider>(
+                          //   context,
+                          //   listen: false,
+                          // );
+                          // final name = userProvider.userName ?? 'Unknown';
+                          // final cisco = userProvider.userCisco ?? '0000';
+                          // final leader = userProvider.userleader ?? 'Unknown';
+                          // final superr = userProvider.usersuper ?? 'Unknown';
+                          // final manger = userProvider.usermanager ?? 'Unknown';
+                          // final location =
+                          //     userProvider.userlocation ?? 'Unknown';
+
                           // استخدم المتغير الخارجي score مباشرة
 
                           // إنشاء قائمة للإجابات الخاطئة
@@ -527,12 +535,16 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
                                 "Manger": manger,
                                 "Suber": superr,
                               });
+                          //  Navigator.pop(context);
 
                           // ترجع للخلف أو تروح لصفحة الرانك:
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(builder: (context) => const ScoreRankingPage()),
-                          // );
+                          Navigator.push(
+                            // ignore: use_build_context_synchronously
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const CustomNavBarBM(),
+                            ),
+                          );
                         },
                         label: const Text(
                           "Finsh",

@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:ui';
 
 import 'package:bmproject/BM/Chat/model/chat_controler.dart';
 import 'package:bmproject/BM/Login/controller/login_control.dart';
@@ -13,6 +14,7 @@ import 'package:bmproject/generated/l10n.dart';
 import 'package:bmproject/theme.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
@@ -21,9 +23,20 @@ import 'package:url_launcher/url_launcher.dart';
 Future<void> main() async {
   const String currentAppVersion = "4.1.3";
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await FcmApi().iniNotification();
   String? latestVersion = await fetchLatestVersion();
+
+  FlutterError.onError = (errorDetails) {
+    FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
+  };
+  // Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
+  PlatformDispatcher.instance.onError = (error, stack) {
+    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    return true;
+  };
+
   runApp(MyApp(isUpToDate: latestVersion == currentAppVersion));
 }
 
@@ -195,7 +208,6 @@ class UpdateRequiredScreen extends StatelessWidget {
 }
 
 void _openWhatsAppAdmin() async {
-  print(Uri);
   final message = Uri.encodeComponent("I need Latest Version Bm Updates app");
   int phone = 1228319567;
   final url = Uri.parse("https://wa.me/20$phone?text=$message");

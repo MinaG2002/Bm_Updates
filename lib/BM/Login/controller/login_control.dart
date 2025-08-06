@@ -48,7 +48,6 @@ class UserProvider with ChangeNotifier {
       await prefs.setString('Manger', usermanager!);
       await prefs.setString('Suber', usersuper!);
       await prefs.setString('phone', userphone!);
-
       notifyListeners();
       return true;
     } else {
